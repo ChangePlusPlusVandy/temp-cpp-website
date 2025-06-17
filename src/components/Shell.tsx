@@ -10,7 +10,8 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import type { PropsWithChildren } from "react";
-import logo from "../assets/2023 Word Logo (Classic) (1).png";
+import logo from "../assets/2023 classic Logo (2).png";
+import Footer from "./Footer";
 
 const Shell: React.FC<PropsWithChildren> = ({ children }) => {
     const [opened, { toggle }] = useDisclosure();
@@ -41,7 +42,7 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                     align="center"
                     px="md"
                 >
-                    <Flex h="100%" component="a" href="/">
+                    <Flex h="100%" py="xs" component="a" href="/">
                         <Image src={logo} />
                     </Flex>
                     <Burger
@@ -51,31 +52,44 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                         size="sm"
                     />
 
-                    <Group ml="xl" flex="1" justify="end" visibleFrom="sm">
+                    <Group
+                        ml="xl"
+                        gap="xl"
+                        flex="1"
+                        justify="end"
+                        visibleFrom="sm"
+                    >
                         <UnstyledButton component="a" href="/about">
                             About
                         </UnstyledButton>
                         <UnstyledButton component="a" href="/projects">
                             Projects
                         </UnstyledButton>
-                        <UnstyledButton component="a" href="/about">
-                            The Team
-                        </UnstyledButton>
-                        <UnstyledButton component="a" href="/contact">
+
+                        <Button color="orange" component="a" href="/contact">
                             Contact Us
-                        </UnstyledButton>
+                        </Button>
                     </Group>
                 </Group>
             </AppShell.Header>
 
             <AppShell.Navbar py="md" px="lg" bg="navy" c="white">
-                <UnstyledButton>Home</UnstyledButton>
-                <UnstyledButton>Blog</UnstyledButton>
-                <UnstyledButton>Contacts</UnstyledButton>
-                <UnstyledButton>Support</UnstyledButton>
+                <UnstyledButton component="a" href="/about">
+                    About
+                </UnstyledButton>
+                <UnstyledButton component="a" href="/projects">
+                    Projects
+                </UnstyledButton>
+
+                <Button color="orange" component="a" href="/contact">
+                    Contact Us
+                </Button>
             </AppShell.Navbar>
 
-            <AppShell.Main>{children}</AppShell.Main>
+            <AppShell.Main>
+                {children}
+                <Footer />
+            </AppShell.Main>
         </AppShell>
     );
 };

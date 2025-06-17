@@ -31,7 +31,7 @@ const Mission: React.FC = () => {
             </Flex>
 
             <Flex direction="column" gap="xs" flex="1">
-                <Card>
+                <Card bg="white">
                     <Flex align="center" gap="md">
                         <ThemeIcon>
                             <CheckIcon />
@@ -44,7 +44,7 @@ const Mission: React.FC = () => {
                         nonprofits. No hidden costs, ever.
                     </Text>
                 </Card>
-                <Card>
+                <Card bg="white">
                     <Flex align="center" gap="md">
                         <ThemeIcon>
                             <CheckIcon />

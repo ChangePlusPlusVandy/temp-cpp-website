@@ -1,4 +1,4 @@
-import { Card, Grid, Title, Text, Flex, Space } from "@mantine/core";
+import { Card, Grid, Title, Text, Flex, Space, Timeline } from "@mantine/core";
 import Shell from "../../components/Shell";
 
 const About: React.FC = () => {
@@ -23,24 +23,12 @@ const About: React.FC = () => {
 
     return (
         <Shell>
-            <Flex bg="sky" px="xl" h="65vh" align="center">
-                <Flex
-                    direction={{ base: "column", sm: "row" }}
-                    flex="1"
-                    justify="space-between"
-                    align="center"
-                    gap={{ base: 0, sm: "md" }}
-                >
-                    <Flex direction="column" justify="center">
-                        <Title fz={75} order={1}>
-                            CHANGE++
-                        </Title>
-                        <Text size="lg">
-                            Digitizing the World of Nonprofits.
-                        </Text>
-                    </Flex>
-                    <Text>Lol placeholder for image</Text>
-                </Flex>
+            <Flex bg="sky" p="xl" align="center">
+                <Timeline active={0} reverseActive bulletSize={22}>
+                    <Timeline.Item title="2019">Test</Timeline.Item>
+                    <Timeline.Item title="2023">Test</Timeline.Item>
+                    <Timeline.Item title="Now">Test</Timeline.Item>
+                </Timeline>
             </Flex>
             <Flex direction="column" p="xl">
                 <Title order={2}>Executive Board Team</Title>
@@ -48,7 +36,7 @@ const About: React.FC = () => {
                 <Grid>
                     {people.map((person) => (
                         <Grid.Col span={3}>
-                            <Card withBorder bg="sky">
+                            <Card withBorder bg="sky" c="black">
                                 <Title size="xl" order={1}>
                                     {person.name}
                                 </Title>

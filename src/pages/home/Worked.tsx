@@ -7,10 +7,11 @@ const Worked: React.FC = () => {
             bg="sky"
             gap="xl"
             p="xl"
-            align="center"
             direction={{ base: "column", sm: "row" }}
         >
-          Where our members have worked
+            <Title order={2} ta="center">
+                Where our members have worked
+            </Title>
         </Flex>
     );
 };

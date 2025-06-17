@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
                 >
                     <Flex direction="column" justify="center" gap="xs">
                         <Badge color="orange">100% Free for Nonprofits</Badge>
-                        <Title fz={75} order={1}>
+                        <Title c="tan" fz={{base: "10vw", sm: 75}} order={1}>
                             Change
                             <Text inherit c="orange" span>
                                 ++
