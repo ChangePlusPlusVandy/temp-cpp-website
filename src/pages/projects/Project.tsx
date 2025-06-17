@@ -1,5 +1,5 @@
 import { Flip } from "@gfazioli/mantine-flip";
-import { Card, Image, Text, Title } from "@mantine/core";
+import { Card, Image, ScrollArea, Text, Title } from "@mantine/core";
 import { useHover } from "@mantine/hooks";
 import type React from "react";
 
@@ -33,7 +33,7 @@ const Project: React.FC<ProjectProps> = ({
                     <Card.Section>
                         <Image
                             src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
-                            height={300}
+                            height={275}
                             alt="Norway"
                         />
                     </Card.Section>
@@ -55,7 +55,9 @@ const Project: React.FC<ProjectProps> = ({
                     radius="md"
                     withBorder
                 >
-                    <Text>{description}</Text>
+                    <ScrollArea h={350}>
+                        <Text>{description}</Text>
+                    </ScrollArea>
                 </Card>
             </Flip.Target>
         </Flip>

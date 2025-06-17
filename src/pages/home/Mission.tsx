@@ -9,6 +9,7 @@ import {
     CheckIcon,
     Card,
 } from "@mantine/core";
+import { IconFreeRights } from "@tabler/icons-react";
 
 const Mission: React.FC = () => {
     return (
@@ -33,16 +34,19 @@ const Mission: React.FC = () => {
             <Flex direction="column" gap="xs" flex="1">
                 <Card bg="white">
                     <Flex align="center" gap="md">
-                        <ThemeIcon>
-                            <CheckIcon />
+                        <ThemeIcon size="xl">
+                            <IconFreeRights
+                                style={{ width: "70%", height: "70%" }}
+                            />
                         </ThemeIcon>
-                        <Title order={3}>100% Free</Title>
+                        <Flex direction="column">
+                            <Title order={3}>100% Free</Title>
+                            <Text c="dimmed">
+                                All our services are completely free for
+                                qualifying nonprofits. No hidden costs, ever.
+                            </Text>
+                        </Flex>
                     </Flex>
-
-                    <Text c="dimmed">
-                        All our services are completely free for qualifying
-                        nonprofits. No hidden costs, ever.
-                    </Text>
                 </Card>
                 <Card bg="white">
                     <Flex align="center" gap="md">
