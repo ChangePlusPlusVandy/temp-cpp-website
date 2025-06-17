@@ -16,6 +16,7 @@ const Involved: React.FC = () => {
                         h="100%"
                         direction="column"
                         gap="xs"
+                        
                     >
                         <Title order={3}>Are you a nonprofit?</Title>
                         <Text>

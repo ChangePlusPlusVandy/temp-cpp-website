@@ -13,11 +13,35 @@ const About: React.FC = () => {
         },
         {
             name: "Michelle Xu",
-            role: "VP of Ops",
+            role: "VP of Operations",
         },
         {
-            name: "idk",
-            role: "lol",
+            name: "Divija Katakam",
+            role: "VP of Operations",
+        },
+        {
+            name: "Jayden Park",
+            role: "VP of Design",
+        },
+        {
+            name: "Janice Chung",
+            role: "VP of Marketing",
+        },
+        {
+            name: "Yifei Fang",
+            role: "VP of Events",
+        },
+        {
+            name: "Jimmy Baek",
+            role: "VP of Product",
+        },
+        {
+            name: "Joseph Quinn",
+            role: "VP of Tech",
+        },
+        {
+            name: "Jason Lee",
+            role: "VP of Finance",
         },
     ];
 
@@ -25,18 +49,29 @@ const About: React.FC = () => {
         <Shell>
             <Flex bg="sky" p="xl" align="center">
                 <Timeline active={0} reverseActive bulletSize={22}>
-                    <Timeline.Item title="2019">Test</Timeline.Item>
-                    <Timeline.Item title="2023">Test</Timeline.Item>
+                    <Timeline.Item title="2019">
+                        Change++ was founded as a project by a small group of
+                        Vanderbilt University students seeking to code for good.
+                    </Timeline.Item>
+                    <Timeline.Item title="2023">
+                        Change++ achieved 501(c)(3) status as an organization
+                        (registered as "Change Plus Plus").
+                    </Timeline.Item>
                     <Timeline.Item title="Now">Test</Timeline.Item>
                 </Timeline>
             </Flex>
-            <Flex direction="column" p="xl">
+            <Flex bg="orange" direction="column" p="xl">
                 <Title order={2}>Executive Board Team</Title>
                 <Space h="md" />
                 <Grid>
                     {people.map((person) => (
                         <Grid.Col span={3}>
-                            <Card withBorder bg="sky" c="black">
+                            <Card
+                                bd="2.5px solid navy"
+                                withBorder
+                                bg="tan"
+                                c="black"
+                            >
                                 <Title size="xl" order={1}>
                                     {person.name}
                                 </Title>
