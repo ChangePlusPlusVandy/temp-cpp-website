@@ -7,17 +7,38 @@ const Projects: React.FC = () => {
         {
             year: "2024-2025",
             projects: [
-                { organization: "Test", description: "ello", imageSrc: "" },
-                { organization: "Test", description: "ello" },
-                { organization: "Test", description: "ello" },
+                {
+                    organization: "Pennsylvania Women Work",
+                    description: "ello",
+                    imageSrc: "/nonprofits/2024-2025/pennsylvania_women_work_logo.jpg",
+                },
+                { organization: "School the World", description: "ello", imageSrc: "/nonprofits/2024-2025/images.png" },
+                { organization: "Foster Source", description: "ello", imageSrc: "/nonprofits/2024-2025/images (1).png" },
+                { organization: "2nd Chance 4 Pets", description: "ello", imageSrc: "/nonprofits/2024-2025/images.jpg" },
+                {
+                    organization: "NAMI Davidson Co.",
+                    description: "test",
+                    imageSrc: "/nonprofits/2024-2025/images (1).jpg",
+                },
             ],
         },
         {
             year: "2023-2024",
             projects: [
-                { organization: "Test", description: "ello" },
-                { organization: "Test", description: "ello" },
-                { organization: "Test", description: "ello" },
+                {
+                    organization: "Volunteer Action Network",
+                    description: "ello",
+                    imageSrc: "/nonprofits/2023-2024/9bd98e_1f8f1ee66e0e4f7dbb58c34bcd17e45f~mv2.jpg"
+                },
+                { organization: "Miracle Flights", description: "ello", imageSrc: "/nonprofits/2023-2024/hqdefault.jpg" },
+                { organization: "Mother to Mother", description: "ello", imageSrc: "/nonprofits/2023-2024/121f8c_dd66b00223cb496d8e16ec7458d2b5d9~mv2.png" },
+                {
+                    organization: "Nashville Diaper Connection",
+                    description: "ello",
+                    imageSrc: "/nonprofits/2023-2024/Copy+of+Copy+of+color-transparent-logo_120+(1).png"
+                },
+
+                { organization: "Friends Life Community", description: "ello", imageSrc: "/nonprofits/2023-2024/images.png" },
             ],
         },
         {
@@ -109,20 +130,21 @@ const Projects: React.FC = () => {
                     organization: "Urban Housing Solutions",
                     description:
                         "Urban Housing Solutions developed a board game called “The Game of Rent” which introduces players to the challenges of finding affordable housing for people of different socio-economic classes. The goal of this project was to create an online/mobile version of this game.",
-                imageSrc: "/nonprofits/2019-2020/urban+housing+solutions.jpeg"
-                    },
+                    imageSrc:
+                        "/nonprofits/2019-2020/urban+housing+solutions.jpeg",
+                },
                 {
                     organization: "Unheard Voices Outreach",
                     description:
                         "Unheard Voices Outreach advocates for re-entry and equitable opportunity for persons formerly convicted as felons. The organization developed re-entry plans for incarcerated individuals and wanted to build an application that would provide formerly incarcerated persons with a toolkit for adjusting and succeeding in life after prison.",
-                imageSrc: "/nonprofits/2019-2020/unheard-voices-outeach.jpg"
-                    },
+                    imageSrc:
+                        "/nonprofits/2019-2020/unheard-voices-outeach.jpg",
+                },
                 {
                     organization: "Directory Project",
                     description:
                         "The Society of Black Peabody Alumni and LatinX wanted to better connect the various individuals from their respective organizations. That application involved building out features of the previous year's Change++ application and incorporating that project with Vanderbilt IT.",
                 },
-        
             ],
         },
     ];
