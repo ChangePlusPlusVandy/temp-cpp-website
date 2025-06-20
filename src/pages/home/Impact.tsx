@@ -7,38 +7,38 @@ import {
     Grid,
     ThemeIcon,
     CheckIcon,
+    Transition,
 } from "@mantine/core";
+import { useWindowScroll } from "@mantine/hooks";
 
 const Impact: React.FC = () => {
+    const [scroll, scrollTo] = useWindowScroll();
     return (
-        <Flex c="white" bg="navy" direction="column" p="xl">
-
-            <Grid>
-                <Grid.Col span={4}>
-                    <Flex direction="column" align="center">
-                        <Title c="orange">50+</Title>
-                        <Text c="gray.4">Nonprofits Served</Text>
-                    </Flex>
-                </Grid.Col>
-                <Grid.Col span={4}>
-                    <Flex direction="column" align="center">
-                 
-                        <Title c="orange">$100K+</Title>
-                        <Text c="gray.4">
-                            Value Delivered
-                        </Text>
-                    </Flex>
-                </Grid.Col>
-                <Grid.Col span={4}>
-                    <Flex direction="column" align="center">
-                 
-                        <Title c="orange">90+</Title>
-                        <Text c="gray.4">
-                            Active Volunteers
-                        </Text>
-                    </Flex>
-                </Grid.Col>
-            </Grid>
+        <Flex c="white" h="20vh" bg="navy" direction="column" p="xl">
+            <Transition transition="slide-up" mounted={scroll.y > 100}>
+                {(transitionStyles) => (
+                    <Grid style={transitionStyles}>
+                        <Grid.Col span={4}>
+                            <Flex direction="column" align="center">
+                                <Title c="orange">50+</Title>
+                                <Text c="gray.4">Nonprofits Served</Text>
+                            </Flex>
+                        </Grid.Col>
+                        <Grid.Col span={4}>
+                            <Flex direction="column" align="center">
+                                <Title c="orange">$100K+</Title>
+                                <Text c="gray.4">Value Delivered</Text>
+                            </Flex>
+                        </Grid.Col>
+                        <Grid.Col span={4}>
+                            <Flex direction="column" align="center">
+                                <Title c="orange">90+</Title>
+                                <Text c="gray.4">Active Volunteers</Text>
+                            </Flex>
+                        </Grid.Col>
+                    </Grid>
+                )}
+            </Transition>
         </Flex>
     );
 };

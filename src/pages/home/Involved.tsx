@@ -8,15 +8,14 @@ const Involved: React.FC = () => {
                 Whether you're a nonprofit needing help or a tech professional
                 wanting to give back, there's a place for you in our community.
             </Text>
-            <Grid align="stretch">
-                <Grid.Col flex="1" span={{ base: 12, sm: 6 }}>
+            <Grid>
+                <Grid.Col span={{ base: 12, sm: 6 }}>
                     <Flex
                         justify="space-between"
                         flex="1"
                         h="100%"
                         direction="column"
                         gap="xs"
-                        
                     >
                         <Title order={3}>Are you a nonprofit?</Title>
                         <Text>
@@ -40,7 +39,7 @@ const Involved: React.FC = () => {
                         </Button>
                     </Flex>
                 </Grid.Col>
-                <Grid.Col flex="1" span={{ base: 12, sm: 6 }}>
+                <Grid.Col span={{ base: 12, sm: 6 }}>
                     <Flex
                         justify="space-between"
                         flex="1"
@@ -61,7 +60,9 @@ const Involved: React.FC = () => {
                             <List.Item>Remote-friendly opportunities</List.Item>
                             <List.Item>Skill-building and networking</List.Item>
                         </List>
-                        <Button color="tan" autoContrast>Whoopie</Button>
+                        <Button color="tan" autoContrast>
+                            Whoopie
+                        </Button>
                     </Flex>
                 </Grid.Col>
             </Grid>

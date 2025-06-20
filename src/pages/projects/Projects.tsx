@@ -1,21 +1,5 @@
-import {
-    Flex,
-    Container,
-    Badge,
-    Title,
-    Button,
-    Text,
-    Grid,
-    Card,
-    Center,
-    Image,
-    Group,
-    Paper,
-    Stack,
-    Switch,
-} from "@mantine/core";
+import { Flex, Container, Title, Grid } from "@mantine/core";
 import Shell from "../../components/Shell";
-import { Flip } from "@gfazioli/mantine-flip";
 import Project from "./Project";
 
 const Projects: React.FC = () => {
@@ -23,7 +7,7 @@ const Projects: React.FC = () => {
         {
             year: "2024-2025",
             projects: [
-                { organization: "Test", description: "ello" },
+                { organization: "Test", description: "ello", imageSrc: "" },
                 { organization: "Test", description: "ello" },
                 { organization: "Test", description: "ello" },
             ],
@@ -101,12 +85,14 @@ const Projects: React.FC = () => {
                 { organization: "Survivor Fitness", description: "ello" },
                 {
                     organization: "Climate Change (Carbon XP)",
-                    description: "The team has been working closely with Dr. Leah Dundon on creating an interactive app aimed at high school students to teach them about climate change. The app will pair with an e-book to be used in a classroom and allow the students to learn about climate change, the environmental effects of climate change, and investigate their impact personally. Some features of the app will be a personal carbon contribution counter and short video clips from the United Nations climate change conference.",
+                    description:
+                        "The team has been working closely with Dr. Leah Dundon on creating an interactive app aimed at high school students to teach them about climate change. The app will pair with an e-book to be used in a classroom and allow the students to learn about climate change, the environmental effects of climate change, and investigate their impact personally. Some features of the app will be a personal carbon contribution counter and short video clips from the United Nations climate change conference.",
                 },
                 {
                     organization: "Kumi Clothing",
-                    description: "Kumi Clothing was brought to Change++ by Vandy Alumnus Michelle She when she noticed the disadvantages faced by the visually impaired community in both professional and educational settings. Having visual impairments can oftentimes be an obstacle to one's fashion sense, which is especially important when it comes to finding that first interview outfit, navigating the education scene with your peers, or even in everyday life situations.\nOur app is a modern solution to this issue that many people face. By using NFC technology, users of the Kumi Clothing App can easily scan a tag on an item of clothing and hear the physical attributes of the item such as the color, size, material, etc. After creating an account, users can store clothing items in their closet for easy access later, and continue scanning new items. Kumi allows its users to be more independent shoppers and removes the need to have someone with them while shopping to help them identify clothing."
-                }
+                    description:
+                        "Kumi Clothing was brought to Change++ by Vandy Alumnus Michelle She when she noticed the disadvantages faced by the visually impaired community in both professional and educational settings. Having visual impairments can oftentimes be an obstacle to one's fashion sense, which is especially important when it comes to finding that first interview outfit, navigating the education scene with your peers, or even in everyday life situations.\nOur app is a modern solution to this issue that many people face. By using NFC technology, users of the Kumi Clothing App can easily scan a tag on an item of clothing and hear the physical attributes of the item such as the color, size, material, etc. After creating an account, users can store clothing items in their closet for easy access later, and continue scanning new items. Kumi allows its users to be more independent shoppers and removes the need to have someone with them while shopping to help them identify clothing.",
+                },
             ],
         },
         {
@@ -116,27 +102,27 @@ const Projects: React.FC = () => {
                     organization: "OASIS Center",
                     description:
                         "The Oasis Center had over 40,000 unique data points that it wanted to analyze. From ECG scans to treatment routines to broad psychological studies, this project had the potential to allow the Oasis Center to evaluate its over 20 programs.",
+                    imageSrc:
+                        "/nonprofits/2019-2020/Screenshot+2023-03-26+at+4.19.57+PM.png",
                 },
                 {
                     organization: "Urban Housing Solutions",
                     description:
                         "Urban Housing Solutions developed a board game called “The Game of Rent” which introduces players to the challenges of finding affordable housing for people of different socio-economic classes. The goal of this project was to create an online/mobile version of this game.",
-                },
+                imageSrc: "/nonprofits/2019-2020/urban+housing+solutions.jpeg"
+                    },
                 {
                     organization: "Unheard Voices Outreach",
                     description:
                         "Unheard Voices Outreach advocates for re-entry and equitable opportunity for persons formerly convicted as felons. The organization developed re-entry plans for incarcerated individuals and wanted to build an application that would provide formerly incarcerated persons with a toolkit for adjusting and succeeding in life after prison.",
-                },
+                imageSrc: "/nonprofits/2019-2020/unheard-voices-outeach.jpg"
+                    },
                 {
                     organization: "Directory Project",
                     description:
                         "The Society of Black Peabody Alumni and LatinX wanted to better connect the various individuals from their respective organizations. That application involved building out features of the previous year's Change++ application and incorporating that project with Vanderbilt IT.",
                 },
-                {
-                    organization: "Climate Change (Carbon XP)",
-                    description:
-                        "Worked with a professor at Vanderbilt who received a research grant to create digital interactive activities or simple games for an electronic book (e-book) on climate change!",
-                },
+        
             ],
         },
     ];
@@ -156,7 +142,7 @@ const Projects: React.FC = () => {
                                         <Project
                                             title={project.organization}
                                             description={project.description}
-                                            imageSrc=""
+                                            imageSrc={project.imageSrc || ""}
                                         />
                                     </Grid.Col>
                                 ))}
