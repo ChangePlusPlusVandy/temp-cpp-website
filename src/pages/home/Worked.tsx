@@ -24,7 +24,11 @@ const Worked: React.FC = () => {
                 <Grid gutter={20}>
                     {companies.map((company) => (
                         <Grid.Col span={{ base: 6, sm: 3 }}>
-                            <Flex align="center" h="100%">
+                            <Flex
+                                align="center"
+                                h="100%"
+                                px={{ base: 0, sm: "xl" }}
+                            >
                                 <Image src={`/temp-cpp-website${company}`} />
                             </Flex>
                         </Grid.Col>

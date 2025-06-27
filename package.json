@@ -15,6 +15,7 @@
     "dependencies": {
         "@gfazioli/mantine-flip": "^2.1.0",
         "@mantine/core": "^8.0.2",
+        "@mantine/form": "^8.1.2",
         "@mantine/hooks": "^8.0.2",
         "@tabler/icons-react": "^3.34.0",
         "react": "^19.1.0",
