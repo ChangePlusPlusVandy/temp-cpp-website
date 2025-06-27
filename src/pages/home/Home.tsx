@@ -1,12 +1,4 @@
-import {
-    Badge,
-    Button,
-    Container,
-    Divider,
-    Flex,
-    Text,
-    Title,
-} from "@mantine/core";
+import { Divider, Flex } from "@mantine/core";
 import Shell from "../../components/Shell";
 import Hero from "./Hero";
 import Mission from "./Mission";

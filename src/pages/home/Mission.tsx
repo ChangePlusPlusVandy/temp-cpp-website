@@ -1,14 +1,4 @@
-import {
-    Flex,
-    Badge,
-    Title,
-    Button,
-    Text,
-    Grid,
-    ThemeIcon,
-    CheckIcon,
-    Card,
-} from "@mantine/core";
+import { Flex, Title, Text, ThemeIcon, CheckIcon, Card } from "@mantine/core";
 import { IconFreeRights } from "@tabler/icons-react";
 
 const Mission: React.FC = () => {

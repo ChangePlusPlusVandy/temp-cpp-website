@@ -1,4 +1,4 @@
-import { Flex, Title, Text, Grid, Card, List, Button } from "@mantine/core";
+import { Flex, Title, Text, Grid, List, Button } from "@mantine/core";
 
 const Involved: React.FC = () => {
     return (

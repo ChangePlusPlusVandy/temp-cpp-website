@@ -164,7 +164,7 @@ const Projects: React.FC = () => {
                                         <Project
                                             title={project.organization}
                                             description={project.description}
-                                            imageSrc={project.imageSrc || ""}
+                                            imageSrc={`/temp-cpp-website${project.imageSrc}` || ""}
                                         />
                                     </Grid.Col>
                                 ))}

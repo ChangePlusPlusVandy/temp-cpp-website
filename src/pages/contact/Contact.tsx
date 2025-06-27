@@ -1,4 +1,3 @@
-import { Card, Grid, Title, Text, Flex, Space } from "@mantine/core";
 import Shell from "../../components/Shell";
 import Involved from "../home/Involved";
 

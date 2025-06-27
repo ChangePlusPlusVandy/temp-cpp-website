@@ -1,18 +1,8 @@
-import {
-    Flex,
-    Badge,
-    Title,
-    Button,
-    Text,
-    Grid,
-    ThemeIcon,
-    CheckIcon,
-    Transition,
-} from "@mantine/core";
+import { Flex, Title, Text, Grid, Transition } from "@mantine/core";
 import { useWindowScroll } from "@mantine/hooks";
 
 const Impact: React.FC = () => {
-    const [scroll, scrollTo] = useWindowScroll();
+    const [scroll] = useWindowScroll();
     return (
         <Flex c="white" h="20vh" bg="navy" direction="column" p="xl">
             <Transition transition="slide-up" mounted={scroll.y > 100}>

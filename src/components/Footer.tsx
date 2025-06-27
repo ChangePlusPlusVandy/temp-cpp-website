@@ -1,16 +1,6 @@
-import {
-    Flex,
-    Grid,
-    Title,
-    Text,
-    Badge,
-    Button,
-    Container,
-    ActionIcon,
-} from "@mantine/core";
+import { Flex, Grid, Title, Text, Button, ActionIcon } from "@mantine/core";
 
 import {
-    IconBrandTwitter,
     IconBrandInstagram,
     IconBrandLinkedin,
     IconBrandFacebook,

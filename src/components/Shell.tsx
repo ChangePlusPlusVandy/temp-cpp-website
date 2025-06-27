@@ -3,7 +3,7 @@ import {
     Group,
     Burger,
     UnstyledButton,
-    NavLink,
+
     Button,
     Image,
     Flex,
@@ -42,7 +42,7 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                     align="center"
                     px="md"
                 >
-                    <Flex h="100%" py="xs" component="a" href="/">
+                    <Flex h="100%" py="xs" component="a" href="/temp-cpp-website">
                         <Image src={logo} />
                     </Flex>
                     <Burger
@@ -59,14 +59,14 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                         justify="end"
                         visibleFrom="sm"
                     >
-                        <UnstyledButton component="a" href="/about">
+                        <UnstyledButton component="a" href="/temp-cpp-website/about">
                             About
                         </UnstyledButton>
-                        <UnstyledButton component="a" href="/projects">
+                        <UnstyledButton component="a" href="/temp-cpp-website/projects">
                             Projects
                         </UnstyledButton>
 
-                        <Button color="orange" component="a" href="/contact">
+                        <Button color="orange" component="a" href="/temp-cpp-website/contact">
                             Contact Us
                         </Button>
                     </Group>
@@ -74,14 +74,14 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
             </AppShell.Header>
 
             <AppShell.Navbar py="md" px="lg" bg="navy" c="white">
-                <UnstyledButton component="a" href="/about">
+                <UnstyledButton component="a" href="/temp-cpp-website/about">
                     About
                 </UnstyledButton>
-                <UnstyledButton component="a" href="/projects">
+                <UnstyledButton component="a" href="/temp-cpp-website/projects">
                     Projects
                 </UnstyledButton>
 
-                <Button color="orange" component="a" href="/contact">
+                <Button color="orange" component="a" href="/temp-cpp-website/contact">
                     Contact Us
                 </Button>
             </AppShell.Navbar>

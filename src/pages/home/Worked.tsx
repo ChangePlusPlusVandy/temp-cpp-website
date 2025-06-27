@@ -25,7 +25,7 @@ const Worked: React.FC = () => {
                     {companies.map((company) => (
                         <Grid.Col span={{ base: 6, sm: 3 }}>
                             <Flex align="center" h="100%">
-                                <Image src={company} />
+                                <Image src={`/temp-cpp-website${company}`} />
                             </Flex>
                         </Grid.Col>
                     ))}

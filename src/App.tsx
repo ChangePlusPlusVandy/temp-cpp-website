@@ -1,8 +1,5 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "@mantine/core/styles.css";
-import '@gfazioli/mantine-flip/styles.css';
+import "@gfazioli/mantine-flip/styles.css";
 import "./App.css";
 
 import Home from "./pages/home/Home";
@@ -13,7 +10,7 @@ import Projects from "./pages/projects/Projects";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/temp-cpp-website">
             <Routes>
                 <Route index element={<Home />} />
                 <Route path="/about" element={<About />} />

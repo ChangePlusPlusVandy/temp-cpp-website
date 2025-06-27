@@ -1,4 +1,4 @@
-import { Badge, Button, Flex, Title, Text, Container } from "@mantine/core";
+import { Badge, Button, Flex, Title, Text, Container, Image } from "@mantine/core";
 
 const Hero: React.FC = () => {
     return (
@@ -9,9 +9,9 @@ const Hero: React.FC = () => {
                     flex="1"
                     justify="space-between"
                     align="center"
-                    gap={{ base: 0, sm: "md" }}
+                    gap={{ base: 0, sm: "xl" }}
                 >
-                    <Flex direction="column" justify="center" gap="xs">
+                    <Flex direction="column" justify="center" gap="xs" flex="1">
                         <Badge color="orange">100% Free for Nonprofits</Badge>
                         <Title c="tan" fz={{base: "10vw", sm: 75}} order={1}>
                             Change
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
                             </Button>
                         </Flex>
                     </Flex>
-                    <Text flex="1">Lol placeholder for image</Text>
+                    <Image w={250} src="/temp-cpp-website/cppgraphic.svg" />
                 </Flex>
             </Container>
         </Flex>
