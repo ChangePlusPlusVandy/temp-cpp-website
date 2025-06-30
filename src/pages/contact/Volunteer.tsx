@@ -1,4 +1,14 @@
-import { Group, Flex, List, TextInput, Textarea, Button } from "@mantine/core";
+import {
+    Group,
+    Flex,
+    List,
+    TextInput,
+    Textarea,
+    Button,
+    Title,
+    Text,
+    Space,
+} from "@mantine/core";
 import { useForm } from "@mantine/form";
 
 const Volunteer: React.FC = () => {
@@ -17,20 +27,35 @@ const Volunteer: React.FC = () => {
     });
     return (
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdgMI5CXolBgScr6848brhm_jyTGLmvwUtEuFY0oe3FP0tRyg/formResponse">
-            <Group gap="xl">
-                <Flex direction="column">
+            <Flex align="center" direction={{ base: "column", sm: "row" }} gap="xl">
+                <Flex direction="column" flex="1">
+                    <Title>
+                        Interested in{" "}
+                        <Text span inherit c="orange">
+                            Volunteering
+                        </Text>{" "}
+                        with Change++?
+                    </Title>
+                    <Space h="md" />
+                    <Text fw={700}>
+                        Note: You must be a{" "}
+                        <Text span inherit c="orange">
+                            university student
+                        </Text>{" "}
+                        interested in starting a Change++ chapter at your home
+                        university.
+                    </Text>
+                    <Space h="md" />
                     <List>
                         <List.Item>
-                            Must be a registered 501(c)(3) nonprofit
+                            Designers, developers, project managers
                         </List.Item>
-                        <List.Item>Clear project scope and timeline</List.Item>
-                        <List.Item>Dedicated point of contact</List.Item>
-                        <List.Item>
-                            Commitment to project collaboration
-                        </List.Item>
+                        <List.Item>Flexible time commitment</List.Item>
+                        <List.Item>Remote-friendly opportunities</List.Item>
+                        <List.Item>Skill-building and networking</List.Item>
                     </List>
                 </Flex>
-                <Flex flex="1" direction="column">
+                <Flex flex="1" direction="column" gap="xs">
                     <Group justify="space-between">
                         <TextInput
                             flex="1"
@@ -80,10 +105,10 @@ const Volunteer: React.FC = () => {
                     />
 
                     <Group justify="flex-end" mt="md">
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" color="orange">Submit</Button>
                     </Group>
                 </Flex>
-            </Group>
+            </Flex>
         </form>
     );
 };

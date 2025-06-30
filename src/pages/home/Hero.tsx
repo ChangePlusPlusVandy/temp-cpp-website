@@ -25,10 +25,8 @@ const Hero: React.FC = () => {
                             to focus on their mission while we handle the tech.
                         </Text>
                         <Flex gap="sm">
-                            <Button color="orange">Request Help</Button>
-                            <Button color="tan" c="black">
-                                Idk
-                            </Button>
+                            <Button color="orange" component="a" href="/temp-cpp-website/projects">View Projects</Button>
+                      
                         </Flex>
                     </Flex>
                     <Image w={250} src="/temp-cpp-website/cppgraphic.svg" />

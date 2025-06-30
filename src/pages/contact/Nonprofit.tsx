@@ -7,6 +7,8 @@ import {
     Text,
     List,
     Flex,
+    Title,
+    Space,
 } from "@mantine/core";
 
 const Nonprofit: React.FC = () => {
@@ -16,6 +18,9 @@ const Nonprofit: React.FC = () => {
             email: "",
             firstName: "",
             lastName: "",
+            orgName: "",
+            orgWebsite: "",
+            message: "",
         },
 
         validate: {
@@ -25,20 +30,8 @@ const Nonprofit: React.FC = () => {
     });
     return (
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWdPH5ADXFcpRIWNLlU667rvsFatce8CEViFzAXMk4F1nB4A/formResponse">
-            <Group gap="xl">
-                <Flex direction="column">
-                    <List>
-                        <List.Item>
-                            Must be a registered 501(c)(3) nonprofit
-                        </List.Item>
-                        <List.Item>Clear project scope and timeline</List.Item>
-                        <List.Item>Dedicated point of contact</List.Item>
-                        <List.Item>
-                            Commitment to project collaboration
-                        </List.Item>
-                    </List>
-                </Flex>
-                <Flex flex="1" direction="column">
+            <Flex align="center" direction={{ base: "column-reverse", sm: "row" }} gap="xl">
+            <Flex flex="1" direction="column" gap="xs">
                     <Group justify="space-between">
                         <TextInput
                             flex="1"
@@ -95,14 +88,37 @@ const Nonprofit: React.FC = () => {
                         {...form.getInputProps("message")}
                         withAsterisk
                         label="Message"
+                        placeholder="Please summarize your project idea in 2-3 sentences. We will follow up with an initial meeting to ask for more details."
                         rows={5}
                     />
 
                     <Group justify="flex-end" mt="md">
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" color="orange">
+                            Submit
+                        </Button>
                     </Group>
                 </Flex>
-            </Group>
+                <Flex direction="column" flex="1">
+                    <Title>
+                        Need a free tech solution for your{"  "}
+                        <Text span c="orange" inherit>
+                            Nonprofit
+                        </Text>
+                        ?
+                    </Title>
+                    <Space h="md" />
+                    <List>
+                        <List.Item>
+                            Must be a registered 501(c)(3) nonprofit
+                        </List.Item>
+                        <List.Item>Clear project scope and timeline</List.Item>
+                        <List.Item>Dedicated point of contact</List.Item>
+                        <List.Item>
+                            Commitment to project collaboration
+                        </List.Item>
+                    </List>
+                </Flex>
+            </Flex>
         </form>
     );
 };

@@ -34,8 +34,13 @@ const Involved: React.FC = () => {
                                 Commitment to project collaboration
                             </List.Item>
                         </List>
-                        <Button color="tan" autoContrast>
-                            Whoopie
+                        <Button
+                            component="a"
+                            href="/temp-cpp-website/contact/nonprofit"
+                            color="tan"
+                            autoContrast
+                        >
+                            Contact Us
                         </Button>
                     </Flex>
                 </Grid.Col>
@@ -60,8 +65,13 @@ const Involved: React.FC = () => {
                             <List.Item>Remote-friendly opportunities</List.Item>
                             <List.Item>Skill-building and networking</List.Item>
                         </List>
-                        <Button color="tan" autoContrast>
-                            Whoopie
+                        <Button
+                            component="a"
+                            href="/temp-cpp-website/contact/volunteer"
+                            color="tan"
+                            autoContrast
+                        >
+                            Contact Us
                         </Button>
                     </Flex>
                 </Grid.Col>
