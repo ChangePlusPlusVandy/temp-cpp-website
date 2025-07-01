@@ -74,41 +74,42 @@ const Projects: React.FC = () => {
                 {
                     organization: "Family-to-Family Network",
                     description:
-                        "F2F is an organization that helps children with disabilities by providing their families with the necessary resources to ensure their children's success. The organization offers specialized training, support, educational opportunities, and specialized case management, resulting in significant impacts. As of 2022, F2F has helped 25,000 families see possibilities in their children, provided training to 235 families and 195 communities, increased the self-advocacy and leadership skills of 172 individuals, aided 22 families in their transition from ECI to ECSE, and helped families navigate government policies.\nTo further enhance their services, in 2022, the organization partnered with Change++ to build a software that features an integrated messaging platform, which is less manual than their current system. This platform allows F2F to have direct and consistent communication with their participants, and consolidate communication mediums for increased participant engagement and resource distribution. This new software streamlines F2F's communication process, making it more efficient and effective in providing support and resources to families and children with disabilities.",
+                        "F2F helps children with disabilities by giving their families the necessary resources to ensure their children's success. The organization offers specialized training, support, educational opportunities, and dedicated case management, leading to significant impacts. F2F has empowered 25,000 families to see possibilities in their children, provided training to 235 families and 195 communities, increased the self-advocacy and leadership skills of 172 individuals, aided 22 families in their transition from ECI to ECSE, and helped families navigate complex government policies.\nTo further enhance their services, the organization partnered with Change++ to build new software. This system features an integrated messaging platform that's much less manual than their previous one. It allows F2F to have direct and consistent communication with participants and consolidates communication mediums for increased engagement and resource distribution. This new software streamlines F2F's communication process, making it more efficient and effective at providing vital support and resources to families and children with disabilities.",
                     imageSrc:
                         "/nonprofits/2022-2023/317087803_10160048678914333_4870390223704920799_n.jpg",
                 },
                 {
                     organization: "Backpacks for the Street",
                     description:
-                        "Backpacks For the Street is an organization that packs essential items such as first aid kits, water, socks, toothpaste, and snacks into colorful backpacks and distributes them to homeless people in New York City. Since 2018, the organization has helped 70,011 people, delivered 63,145 backpacks since the COVID pandemic, and provided 26,487 meals to the homeless. Despite having a website, the organization lacked a system in place for volunteers.\nIn 2022, the organization partnered with Change++ to build a software database that enables volunteers to access resources and helps them identify homeless individuals who need assistance. This new system improves communication about homeless activity and needs, providing a more effective way to help the homeless community.",
+                        "Backpacks For the Street (BFTST) assembles crucial provisions—such as first aid kits, water, socks, toothpaste, and snacks—into vibrant backpacks, which they then distribute to homeless individuals across New York City. Since 2018, this organization has aided over 70,000 people, supplied more than 63,000 backpacks since the COVID pandemic began, and furnished 26,487 meals. Despite maintaining a website, BFTST lacked a structured system for its volunteers.\nTo rectify this, the organization collaborated with us to construct a software database. This system empowered volunteers to access vital resources and facilitated their ability to identify homeless individuals requiring assistance. The new platform enhanced communication regarding homeless activity and specific needs, thereby establishing a more effective method for supporting the homeless community.",
                     imageSrc:
                         "/nonprofits/2022-2023/Screenshot+2023-03-26+at+5.21.11+PM.png",
                 },
                 {
                     organization: "Her Future Coalition",
                     description:
-                        "Since 2005, HFC has worked to break cycles of poverty and gender-based violence by providing education and comprehensive services to young girls in India and Nepal. The program’s major problem is data tracking, which is currently done on paper.\nHFC partnered with Change++ in 2022 with the objective of creating software to easily maintain data and measure outcomes. ",
+                        "Since 2005, HFC has committed itself to breaking cycles of poverty and gender-based violence by delivering education and extensive services to young girls in India and Nepal. A significant hurdle for the program is its current paper-based data tracking system, which presents challenges for efficient record-keeping.\n To address this, HFC partnered with us to create a software solution. This system was designed to easily maintain data and effectively measure program outcomes, providing a more streamlined approach to their crucial work.",
                     imageSrc:
                         "/nonprofits/2022-2023/Her-Future-Coalition-Final.png",
                 },
                 {
                     organization: "Book'em",
                     description:
-                        "Book'em has a mission to create a more literate Nashville and inspire children's passion for reading through book ownership and enthusiastic volunteers. The organization has distributed 134,130 books in 2022, 193,841 books in 2021, and over 1 million books since 1989. Despite the organization's success, it still faces several challenges, including a lack of a central dashboard and a \"single source of truth,\" a shortage of volunteer and donor records, and redundancy in form submission on the organization's website.\nTo address these issues, the organization partnered with us in 2022 to create a user portal that saves history and allows for account creation, providing stakeholders with a consolidated platform to manage and view data. With this new software, Book'em has a centralized dashboard that provides them with a single source of truth, eliminating the need for redundant data entry. The user portal also provides the organization with better record-keeping and reporting capabilities, enabling them to better manage volunteers and donors, and streamline their operations.",
+                        "Book'em works to cultivate a more literate Nashville and spark a passion for reading in children through book ownership and dedicated volunteers. The organization has successfully distributed over 1 million books since 1989, including 193,841 in 2021 and 134,130 in 2022. Despite these achievements, Book'em faces several operational hurdles: a lack of a central dashboard and a \"single source of truth,\" insufficient volunteer and donor records, and redundant form submissions on their website.\nTo tackle these challenges, we partnered with Book'em to create a user portal. This system saves historical data and allows for account creation, giving stakeholders a unified platform to manage and view information. The new software provides Book'em with a centralized dashboard that acts as their single source of truth, cutting out redundant data entry. It also improves the organization's record-keeping and reporting, enabling better management of volunteers and donors, and streamlining their overall operations.",
+
                     imageSrc:
                         "/nonprofits/2022-2023/book-em_processed_72e0872b624697c158ed0773328064e97434be93e5e689358d538f96b4610628_logo.jpg",
                 },
                 {
                     organization: "MissionSAFE",
                     description:
-                        "MissionSAFE works with Boston’s highly at-risk youth to gain the skills and confidence to thrive and improve their community and their world. The programs offered range from Youth Leadership Service Corps, Summer of Leadership & Services, and Futures, to other programs. However, the organization lacks a way to track progress in one central place.\nThey partnered with us as part of Change++’s 2022 non-profit projects to create a software that processes user action into progress reports and automatically stores/retrieves that data from a central database.",
+                        "MissionSAFE empowers Boston's highly at-risk youth, helping them develop the skills and confidence needed to thrive and improve their community. They achieve this through a range of programs, including the Youth Leadership Service Corps, Summer of Leadership & Services, and Futures, among others. A key challenge they faced was lacking a centralized system to track participant progress. To address this, we partnered with them as part of Change++'s non-profit initiatives to create a software system. This system processed user actions into progress reports and automatically stored and retrieved data from a central database.",
                     imageSrc: "/nonprofits/2022-2023/missionsafe.png",
                 },
                 {
                     organization: "For Pete's Sake Cancer Respite Project",
                     description:
-                        "The For Pet’s Sake Cancer Respite (FPSCR) organization provides opportunities for cancer patients, their families, and their caregivers to have meaningful and unifying experiences. They accomplish this by running both travel and in-home (for those unable to leave) experiences that enable participants to make unforgettable memories. They also have smaller events serving the same communities throughout the year. However, Oncologists are unable to securely communicate with cancer respite patients, creating a lengthy and painful paperwork process.\nThe organization partnered with us in 2022 to build an app with an integrated direct and group messaging platform, a FPSCR newsletter, an automated animation form for benefits, and a survey feature to allow the nonprofit to gauge and analyze feedback from patients.",
+                        "For Pete's Sake Cancer Respite (FPSCR) offers opportunities for cancer patients, their families, and caregivers to share meaningful, unifying experiences. They do this by organizing both travel and in-home respite experiences (for those unable to leave), helping participants create unforgettable memories. FPSCR also hosts smaller events throughout the year for these same communities. A significant challenge they face is that oncologists can't securely communicate with respite patients, which leads to a lengthy and burdensome paperwork process. To address this, we partnered with the organization to build an app. This app included an integrated direct and group messaging platform, a dedicated FPSCR newsletter, an automated application form for benefits, and a survey feature, allowing the nonprofit to gather and analyze patient feedback.",
                     imageSrc: "/nonprofits/2022-2023/fps-registered.png",
                 },
             ],
@@ -118,8 +119,10 @@ const Projects: React.FC = () => {
             projects: [
                 {
                     organization: "United Front Against River Blindness",
-                    description: "ello",
-                    imageSrc: "/nonprofits/2021-2022/0006_partner-ufar-logo.jpg",
+                    description:
+                        "The background for this project is that UFAR works to prevent river blindness and other neglected tropical diseases in the Congo. Addressing this, Change++ developed a mobile app that doctors used to record patient data during mass drug administrations. The goal was to enable UFAR to more effectively collect, synthesize, and track vital data, giving them the insights required to save more lives.",
+                    imageSrc:
+                        "/nonprofits/2021-2022/0006_partner-ufar-logo.jpg",
                 },
 
                 {
@@ -129,18 +132,24 @@ const Projects: React.FC = () => {
                 },
                 {
                     organization: "PENCIL Tech",
-                    description: "ello",
-                    imageSrc: "/nonprofits/2021-2022/279422953_367397692069687_5081679253491433621_n.jpg",
+                    description:
+                        "PENCIL equips Nashville classrooms with school supplies, which teachers then distribute to their students. It stands as the primary, no-cost provider of classroom essentials to public schools throughout Nashville. For this initiative, Change++ developed an online database to assist PENCIL in collecting and analyzing data related to the supplies delivered to educators. This system became a central access point, enabling teachers to schedule visits to PENCIL facilities, allowing PENCIL to monitor its stock, and providing teachers with a comprehensive history of their past requisitions.",
+                    imageSrc:
+                        "/nonprofits/2021-2022/LOGO_PENCIL_stacked_2016 (1).jpg",
                 },
                 {
                     organization: "Credit Do",
-                    description: "ello",
-                    imageSrc: "/nonprofits/2021-2022/463029475_8954853257871796_6724120155233660705_n.jpg",
+                    description:
+                        "Credit Do's mission is to promote financial literacy among youth and their families. They achieve this by offering asset-building learning opportunities through their community-based program, Smarter Barter. To boost its effectiveness, the organization seeks to digitize Smarter Barter, paving the way for national expansion. As their partner, we developed a software system. This system enabled tracking of lessons and assignments for the Smarter Barter curriculum, facilitated event management, and streamlined the distribution of digital gift cards for partner grocery stores.",
+                    imageSrc:
+                        "/nonprofits/2021-2022/463029475_8954853257871796_6724120155233660705_n.jpg",
                 },
                 {
                     organization: "Code Your Chances",
-                    description: "ello",
-                    imageSrc: "/nonprofits/2021-2022/400dpiLogo_edited_edited.avif",
+                    description:
+                        "CYC works to inspire a new generation of female leaders in computer science and to address the gender imbalance in STEM fields, with a particular focus on communities that have limited access to computer education. For this project, Change++ created a mobile app for use in CYC classrooms that introduced students to core CS concepts like loops and variables through interactive educational Virtual Reality and Augmented Reality games.",
+                    imageSrc:
+                        "/nonprofits/2021-2022/400dpiLogo_edited_edited.avif",
                 },
             ],
         },
@@ -160,7 +169,7 @@ const Projects: React.FC = () => {
                 {
                     organization: "Moraga Orinda Fire District (MOFD)",
                     description:
-                        "It all began with an idea. How can we use the existing sprinkler systems in Moraga-Orinda district to stop the nearby wildfires from spreading and burning down the houses? The solution: Make an interface for the fire department to turn on all the lawn sprinklers in the area in the case of a wildfire. And that’s precisely what we did. We built a web app for the Moraga-Orinda Fire District, CA so fire chiefs could control the lawn sprinkler systems. Homeowners are given the option to sign up their sprinklers in our web app using a simple form. When they sign up, they can focus on evacuation in the event of a wildfire. The fire department can use our app to trigger all the lawn sprinklers in the area to prevent the fire from burning down houses.",
+                        "Our project began with a simple question: How can we leverage existing sprinkler systems to combat wildfires in the Moraga-Orinda district? The answer was to create a web interface that allows the fire department to activate all registered lawn sprinklers in the event of a wildfire. We built this app for the Moraga-Orinda Fire District, CA. Homeowners can easily sign up their sprinklers, enabling them to prioritize evacuation while the fire department uses the system to protect homes.",
                     imageSrc: "/nonprofits/2020-2021/rodeo-2.png",
                 },
                 {
