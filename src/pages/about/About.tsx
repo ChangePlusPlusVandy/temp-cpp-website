@@ -65,7 +65,7 @@ const About: React.FC = () => {
                 <Space h="md" />
                 <Grid>
                     {people.map((person) => (
-                        <Grid.Col span={3}>
+                        <Grid.Col span={{base: 12, sm: 3}}>
                             <Card
                                 bd="2.5px solid navy"
                                 withBorder
