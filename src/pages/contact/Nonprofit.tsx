@@ -11,7 +11,15 @@ import {
     Space,
 } from "@mantine/core";
 
-const Nonprofit: React.FC = () => {
+export interface SubmitProps {
+    onSubmit: () => void;
+    target: string;
+}
+
+const Nonprofit: React.FC<SubmitProps> = ({
+    target,
+    onSubmit,
+}: SubmitProps) => {
     const form = useForm({
         mode: "uncontrolled",
         initialValues: {
@@ -29,9 +37,18 @@ const Nonprofit: React.FC = () => {
         },
     });
     return (
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWdPH5ADXFcpRIWNLlU667rvsFatce8CEViFzAXMk4F1nB4A/formResponse">
-            <Flex align="center" direction={{ base: "column-reverse", sm: "row" }} gap="xl">
-            <Flex flex="1" direction="column" gap="xs">
+        <form
+            onSubmit={onSubmit}
+            method="post"
+            target={target}
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWdPH5ADXFcpRIWNLlU667rvsFatce8CEViFzAXMk4F1nB4A/formResponse"
+        >
+            <Flex
+                align="center"
+                direction={{ base: "column-reverse", sm: "row" }}
+                gap="xl"
+            >
+                <Flex flex="1" direction="column" gap="xs">
                     <Group justify="space-between">
                         <TextInput
                             flex="1"

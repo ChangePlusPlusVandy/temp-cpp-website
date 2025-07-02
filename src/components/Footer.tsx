@@ -1,10 +1,11 @@
-import { Flex, Grid, Title, Text, Button, ActionIcon } from "@mantine/core";
+import { Flex, Grid, Title, Text, ActionIcon } from "@mantine/core";
 
 import {
     IconBrandInstagram,
     IconBrandLinkedin,
     IconBrandFacebook,
     IconBrandX,
+    IconMail,
 } from "@tabler/icons-react";
 
 const Footer: React.FC = () => {
@@ -25,51 +26,55 @@ const Footer: React.FC = () => {
                     </Flex>
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, sm: 6 }}>
-                    <Flex direction="column" justify="space-between" h="100%">
-                        <Flex align="center" gap="md" justify="space-between">
-                            <Text>Email</Text>
-                            <Button>info@changeplusplus.org</Button>
-                        </Flex>
-                        <Flex align="center" gap="md" justify="space-between">
-                            <Text>Address</Text>
-                            <Button>info@changeplusplus.org</Button>
-                        </Flex>
-                        <Flex gap="md">
-                            <ActionIcon
-                                component="a"
-                                href="https://www.instagram.com/changeplusplus/"
-                                target="_blank"
-                                variant="subtle"
-                                size="lg"
-                            >
-                                <IconBrandInstagram size={100} />
-                            </ActionIcon>
-                            <ActionIcon
-                                component="a"
-                                href="https://www.facebook.com/changeplusplus/"
-                                target="_blank"
-                                variant="subtle"
-                                size="lg"
-                            >
-                                <IconBrandFacebook size={100} />
-                            </ActionIcon>
-                            <ActionIcon
-                                component="a"
-                                href="https://www.linkedin.com/company/changeplusplus/"
-                                variant="subtle"
-                                size="lg"
-                            >
-                                <IconBrandLinkedin size={100} />
-                            </ActionIcon>
-                            <ActionIcon
-                                component="a"
-                                href="https://x.com/changeplusplus"
-                                variant="subtle"
-                                size="lg"
-                            >
-                                <IconBrandX />
-                            </ActionIcon>
-                        </Flex>
+                    <Flex gap="md" align="center" justify="end" h="100%">
+                        <ActionIcon
+                            component="a"
+                            href="mailto:info@changeplusplus.org"
+                            target="_blank"
+                            variant="subtle"
+                            size="lg"
+                            color="white"
+                        >
+                            <IconMail size={100} stroke={1.5} />
+                        </ActionIcon>
+                        <ActionIcon
+                            component="a"
+                            href="https://www.instagram.com/changeplusplus/"
+                            target="_blank"
+                            variant="subtle"
+                            size="lg"
+                            color="white"
+                        >
+                            <IconBrandInstagram stroke={1.5} size={100} />
+                        </ActionIcon>
+                        <ActionIcon
+                            component="a"
+                            href="https://www.facebook.com/changeplusplus/"
+                            target="_blank"
+                            variant="subtle"
+                            size="lg"
+                            color="white"
+                        >
+                            <IconBrandFacebook stroke={1.5} size={100} />
+                        </ActionIcon>
+                        <ActionIcon
+                            component="a"
+                            href="https://www.linkedin.com/company/changeplusplus/"
+                            variant="subtle"
+                            size="lg"
+                            color="white"
+                        >
+                            <IconBrandLinkedin stroke={1.5} size={100} />
+                        </ActionIcon>
+                        <ActionIcon
+                            component="a"
+                            href="https://x.com/changeplusplus"
+                            variant="subtle"
+                            size="lg"
+                            color="white"
+                        >
+                            <IconBrandX size={100} stroke={1.5} />
+                        </ActionIcon>
                     </Flex>
                 </Grid.Col>
             </Grid>

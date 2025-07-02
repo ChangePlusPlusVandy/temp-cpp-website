@@ -9,27 +9,32 @@ const Projects: React.FC = () => {
             projects: [
                 {
                     organization: "Pennsylvania Women Work",
-                    description: "ello",
+                    description:
+                        "Pennsylvania Women Work (PWW) is a nonprofit workforce development organization committed to helping women achieve financial stability. They empower women to advance their careers and reach self-sufficiency through impactful career development programs and mentorship. For this project, a password-protected student dashboard was created. This dashboard allows the community to securely access their personal information, class modules, and other important documents, centralizing essential resources for PWW's participants.",
                     imageSrc: "/nonprofits/2024-2025/maxresdefault.jpg",
                 },
                 {
                     organization: "School the World",
-                    description: "ello",
+                    description:
+                        "The Change++ team developed a mobile application for data tracking and visualization for School the World, an organization dedicated to ending the cycle of poverty through education in rural communities, primarily in Latin America. This application was designed to streamline their data collection processes and provide clear visualizations of their impact, helping them better understand and demonstrate the effectiveness of their educational programs.",
                     imageSrc: "/nonprofits/2024-2025/School-The-World-SEO.webp",
                 },
                 {
                     organization: "Foster Source",
-                    description: "ello",
+                    description:
+                        "Foster Source provides training, resources, and crucial support to foster and kinship families across Colorado. For this project, we completed a full redesign of their Learning Management System. This system is used to train foster parents, and the redesign aimed to enhance its effectiveness and usability for their vital educational programs.",
                     imageSrc: "/nonprofits/2024-2025/images (1).png",
                 },
                 {
                     organization: "2nd Chance 4 Pets",
-                    description: "ello",
+                    description:
+                        "2nd Chance 4 Pets, a virtual volunteer-based nonprofit established in 2004, works to reduce pet euthanasia stemming from an owner's death or incapacity. Serving communities nationwide, they focus on veterinarians, shelters, hospices, and pet owners, providing crucial resources to ensure pets continue to receive care. For this initiative, we developed a comprehensive pet-care dashboard. This platform centralizes important animal information and offers an online version of their pet care instructions guide, making vital resources easily accessible.",
                     imageSrc: "/nonprofits/2024-2025/images.jpg",
                 },
                 {
                     organization: "NAMI Davidson Co.",
-                    description: "test",
+                    description:
+                        "The Change++ NAMI Team developed a specialized mobile application for NAMI, the National Alliance on Mental Illness, an organization dedicated to building better lives for the millions of Americans affected by mental illness. This project focused on two core functionalities: event registration and a real-time chat feature. ",
                     imageSrc: "/nonprofits/2024-2025/images (1).jpg",
                 },
             ],
@@ -44,7 +49,8 @@ const Projects: React.FC = () => {
                 },
                 {
                     organization: "Miracle Flights",
-                    description: "ello",
+                    description:
+                        "This project delivered a full-stack web application for Miracle Flights, a nonprofit organization that coordinates free flights for individuals requiring critical medical treatment. The application enables users to create and manage accounts, access patient information, upload necessary documents, view scheduled trips, and submit new trip requests, significantly streamlining their process.",
                     imageSrc: "/nonprofits/2023-2024/hqdefault.jpg",
                 },
                 {
@@ -158,7 +164,8 @@ const Projects: React.FC = () => {
             projects: [
                 {
                     organization: "Tennessee Local Food Summit",
-                    description: "ello",
+                    description:
+                        "This nonprofit's core activity revolves around a large annual food summit, though they're expanding their focus to include year-round educational systems and additional initiatives. Despite working closely with farmers, policymakers, restaurants, and activists, they currently lack any technology, which makes it hard to keep these vital partnerships strong once the summit ends. To solve this, Change++ developed a conference management app for attendees to connect and access event details.",
                     imageSrc: "/nonprofits/2020-2021/TLF_Logo.png",
                 },
                 {
@@ -174,18 +181,21 @@ const Projects: React.FC = () => {
                 },
                 {
                     organization: "Farmlink",
-                    description: "ello",
+                    description:
+                        "Farmlink consistently faces a complex challenge in pricing produce: they aim to offer fair compensation to farmers while also securing the lowest possible price to maximize their impact. Currently, historical pricing data is scattered across three main websites, making it incredibly complicated and time-consuming to determine optimal buying prices. To solve this, Change++ developed a dedicated portal where users can enter a state and produce type. The system then returns estimates for current market price, a specific PPO price (an internal metric), and, crucially, a recommended Farmlink price*—calculated using market data, the PPO* price, and their own historical payments—significantly streamlining their purchasing decisions.",
                     imageSrc:
                         "/nonprofits/2020-2021/changepp_logos_2021 (1).png",
                 },
                 {
                     organization: "Survivor Fitness",
-                    description: "ello",
+                    description:
+                        "Survivor Fitness works to empower cancer survivors by providing them with personalized health and fitness programs during and after treatment. The organization faced challenges in efficiently collecting information for analysis and clear presentation, often missing key checkpoints with participants. Additionally, trainers needed an easier way to input data and track progress within the program. To address these issues, Change++ developed a solution designed to streamline data entry, ensure comprehensive progress tracking, and facilitate better analysis and interpretation of participant outcomes.",
                     imageSrc: "/nonprofits/2020-2021/changepp_logos_2021.png",
                 },
                 {
                     organization: "Nashville Mayor's Office",
-                    description: "ello",
+                    description:
+                        "The Nashville Mayor's Office manages three vital initiatives to connect residents with crucial food, employment, and childcare resources. They've collected extensive geolocated data on service providers, but faced a significant challenge: translating this information into an easy-to-understand, user-friendly platform that Nashvillians could readily access. To overcome this, Change++ designed a custom technological tool, envisioned as a single platform with search options for each program area. This solution aims to help tens of thousands of Nashvillians easily find and access the resources they need, designed with thoughtful consideration for individuals with varying literacy backgrounds, and potentially adaptable for other cities facing similar challenges.",
                     imageSrc: "/nonprofits/2020-2021/changepp_logos_2021-2.png",
                 },
             ],
@@ -196,21 +206,21 @@ const Projects: React.FC = () => {
                 {
                     organization: "OASIS Center",
                     description:
-                        "The Oasis Center had over 40,000 unique data points that it wanted to analyze. From ECG scans to treatment routines to broad psychological studies, this project had the potential to allow the Oasis Center to evaluate its over 20 programs.",
+                        "The Oasis Center, a nationally recognized organization in Nashville, is dedicated to helping young people in Middle Tennessee move into happy, healthy, and productive adulthood. They achieve this by building relationships that advance youth well-being, amplify youth voice, and inspire action toward a just community, offering over 20 diverse programs. To better understand the impact of these extensive efforts, the Oasis Center had accumulated over 40,000 unique data points. These ranged from ECG scans and specific treatment routines to findings from broad psychological studies. This project held the potential to allow the Oasis Center to comprehensively evaluate its wide array of programs, leveraging this rich dataset to refine and improve its vital services.",
                     imageSrc:
                         "/nonprofits/2019-2020/Screenshot+2023-03-26+at+4.19.57+PM.png",
                 },
                 {
                     organization: "Urban Housing Solutions",
                     description:
-                        "Urban Housing Solutions developed a board game called “The Game of Rent” which introduces players to the challenges of finding affordable housing for people of different socio-economic classes. The goal of this project was to create an online/mobile version of this game.",
+                        'Urban Housing Solutions (UHS) is a Nashville-based non-profit organization dedicated to creating and managing affordable housing options. They provide safe, quality, and affordable homes for individuals and families, aiming to foster stable communities. As an educational tool, Urban Housing Solutions developed a board game called "The Game of Rent," which introduces players to the complex challenges of finding affordable housing across different socio-economic backgrounds. The primary objective of this project was to create an accessible online and mobile version of this educational game.',
                     imageSrc:
                         "/nonprofits/2019-2020/urban+housing+solutions.jpeg",
                 },
                 {
                     organization: "Unheard Voices Outreach",
                     description:
-                        "Unheard Voices Outreach advocates for re-entry and equitable opportunity for persons formerly convicted as felons. The organization developed re-entry plans for incarcerated individuals and wanted to build an application that would provide formerly incarcerated persons with a toolkit for adjusting and succeeding in life after prison.",
+                        "Unheard Voices Outreach advocates for re-entry and equitable opportunity for individuals formerly convicted as felons. The organization develops comprehensive re-entry plans for incarcerated individuals. Their goal for this project was to build an application that would provide formerly incarcerated persons with a vital toolkit for adjusting and succeeding in life after prison.",
                     imageSrc:
                         "/nonprofits/2019-2020/unheard-voices-outeach.jpg",
                 },
