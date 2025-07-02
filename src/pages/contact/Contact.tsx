@@ -1,4 +1,4 @@
-import { Flex, Space, Tabs } from "@mantine/core";
+import { Flex, LoadingOverlay, Space, Tabs } from "@mantine/core";
 import Shell from "../../components/Shell";
 import Volunteer from "./Volunteer";
 import Nonprofit from "./Nonprofit";
@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!submitted) {
+        /* if (!submitted) {
             const lastSubmitted = localStorage.getItem("lastSubmitted");
             if (lastSubmitted) {
                 setSubmitted(
@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
             } else {
                 setSubmitted(false);
             }
-        }
+        }*/
     }, [submitted]);
 
     return (
@@ -38,12 +38,13 @@ const Contact: React.FC = () => {
                             new Date().toUTCString()
                         );
 
-                        window.location.href = "/temp-cpp-website/contact/thank-you";
+                        window.location.href =
+                            "/temp-cpp-website/contact/thank-you";
                     }
                 }}
             ></iframe>
             <Flex bg="sky" c="navy" direction="column" p="xl">
-                {submitted || type == "thank-you" ? (
+                {type == "thank-you" ? (
                     <ThankYou />
                 ) : (
                     <Tabs
@@ -66,11 +67,19 @@ const Contact: React.FC = () => {
                         </Tabs.List>
                         <Space h="sm" />
                         <Tabs.Panel value="nonprofit">
-                            <Nonprofit target="hidden_iframe" onSubmit={() => setSubmitted(true)} />
+                            <Nonprofit
+                                target="hidden_iframe"
+                                onSubmit={() => setSubmitted(true)}
+                                status={submitted}
+                            />
                         </Tabs.Panel>
 
                         <Tabs.Panel value="volunteer">
-                            <Volunteer />
+                            <Volunteer
+                                target="hidden_iframe"
+                                onSubmit={() => setSubmitted(true)}
+                                status={submitted}
+                            />
                         </Tabs.Panel>
                     </Tabs>
                 )}

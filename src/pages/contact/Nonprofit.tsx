@@ -9,16 +9,19 @@ import {
     Flex,
     Title,
     Space,
+    LoadingOverlay,
 } from "@mantine/core";
 
 export interface SubmitProps {
     onSubmit: () => void;
     target: string;
+    status: boolean;
 }
 
 const Nonprofit: React.FC<SubmitProps> = ({
     target,
     onSubmit,
+    status,
 }: SubmitProps) => {
     const form = useForm({
         mode: "uncontrolled",
@@ -34,11 +37,33 @@ const Nonprofit: React.FC<SubmitProps> = ({
         validate: {
             email: (value) =>
                 /^\S+@\S+$/.test(value) ? null : "Invalid email",
+            firstName: (value) =>
+                value.length < 1 ? "You must input a first name." : null,
+            lastName: (value) =>
+                value.length < 1 ? "You must input a first name." : null,
+            orgName: (value) =>
+                value.length < 1
+                    ? "You must input the name of your organization."
+                    : null,
+            message: (value) =>
+                value.length < 1 ? "You must input a message." : null,
         },
     });
     return (
         <form
-            onSubmit={onSubmit}
+            onSubmit={form.onSubmit((__, event) => {
+                // If we reach this line, it means all validations from useForm have passed.
+
+                // This explicitly triggers the native form submission to the 'action' URL.
+                // It will only execute if validation passed.
+                if (event) {
+                    event.currentTarget.submit();
+                }
+
+                // This calls the parent's onSubmit to signal a successful attempt,
+                // which will eventually lead to the redirect via the iframe's onload.
+                onSubmit();
+            })}
             method="post"
             target={target}
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWdPH5ADXFcpRIWNLlU667rvsFatce8CEViFzAXMk4F1nB4A/formResponse"
@@ -48,7 +73,16 @@ const Nonprofit: React.FC<SubmitProps> = ({
                 direction={{ base: "column-reverse", sm: "row" }}
                 gap="xl"
             >
-                <Flex flex="1" direction="column" gap="xs">
+                <Flex flex="1" direction="column" gap="xs" pos="relative">
+                    <LoadingOverlay
+                        visible={status}
+                        zIndex={1000}
+                        overlayProps={{
+                            radius: "sm",
+                            blur: 2,
+                            color: "var(--mantine-color-sky-filled)",
+                        }}
+                    />
                     <Group justify="space-between">
                         <TextInput
                             flex="1"
