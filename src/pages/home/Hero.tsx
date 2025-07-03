@@ -42,13 +42,13 @@ const Hero: React.FC = () => {
                             <Button
                                 color="orange"
                                 component="a"
-                                href="/temp-cpp-website/projects"
+                                href="/projects"
                             >
                                 View Projects
                             </Button>
                         </Flex>
                     </Flex>
-                    <Image w={250} src="/temp-cpp-website/cppgraphic.svg" />
+                    <Image w={250} src="/cppgraphic.svg" />
                 </Flex>
             </Container>
         </Flex>

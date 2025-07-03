@@ -10,7 +10,7 @@ import Projects from "./pages/projects/Projects";
 
 function App() {
     return (
-        <BrowserRouter basename="/temp-cpp-website">
+        <BrowserRouter basename="/">
             <Routes>
                 <Route index element={<Home />} />
                 <Route path="/about" element={<About />} />

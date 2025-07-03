@@ -2,7 +2,7 @@
     "name": "temp-cpp-website",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://changeplusplusvandy.github.io/temp-cpp-website",
+    "homepage": "https://changeplusplus.org",
     "type": "module",
     "scripts": {
         "predeploy": "npm run build",

@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
                         );
 
                         window.location.href =
-                            "/temp-cpp-website/contact/thank-you";
+                            "/contact/thank-you";
                     }
                 }}
             ></iframe>

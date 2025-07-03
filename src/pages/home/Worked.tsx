@@ -29,7 +29,7 @@ const Worked: React.FC = () => {
                                 h="100%"
                                 px={{ base: 0, sm: "xl" }}
                             >
-                                <Image src={`/temp-cpp-website${company}`} />
+                                <Image src={`${company}`} />
                             </Flex>
                         </Grid.Col>
                     ))}

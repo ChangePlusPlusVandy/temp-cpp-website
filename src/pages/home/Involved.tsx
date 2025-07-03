@@ -36,7 +36,7 @@ const Involved: React.FC = () => {
                         </List>
                         <Button
                             component="a"
-                            href="/temp-cpp-website/contact/nonprofit"
+                            href="/contact/nonprofit"
                             color="tan"
                             autoContrast
                         >
@@ -67,7 +67,7 @@ const Involved: React.FC = () => {
                         </List>
                         <Button
                             component="a"
-                            href="/temp-cpp-website/contact/volunteer"
+                            href="/contact/volunteer"
                             color="tan"
                             autoContrast
                         >

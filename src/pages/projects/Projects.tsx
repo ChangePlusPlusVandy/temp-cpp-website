@@ -239,7 +239,7 @@ const Projects: React.FC = () => {
                                             title={project.organization}
                                             description={project.description}
                                             imageSrc={
-                                                `/temp-cpp-website${project.imageSrc}` ||
+                                                `${project.imageSrc}` ||
                                                 ""
                                             }
                                         />

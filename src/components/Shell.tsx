@@ -45,7 +45,7 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                         h="100%"
                         py="xs"
                         component="a"
-                        href="/temp-cpp-website"
+                        href="/"
                     >
                         <Image src={logo} />
                     </Flex>
@@ -66,13 +66,13 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                     >
                         <UnstyledButton
                             component="a"
-                            href="/temp-cpp-website/about"
+                            href="/about"
                         >
                             About
                         </UnstyledButton>
                         <UnstyledButton
                             component="a"
-                            href="/temp-cpp-website/projects"
+                            href="/projects"
                         >
                             Projects
                         </UnstyledButton>
@@ -80,7 +80,7 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                         <Button
                             color="orange"
                             component="a"
-                            href="/temp-cpp-website/contact"
+                            href="/contact"
                         >
                             Contact Us
                         </Button>
@@ -93,14 +93,14 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                     <Button
                         color="navy"
                         component="a"
-                        href="/temp-cpp-website/about"
+                        href="/about"
                         size="xl"
                     >
                         About
                     </Button>
                     <Button
                         component="a"
-                        href="/temp-cpp-website/projects"
+                        href="/projects"
                         size="xl"
                         color="navy"
                     >
@@ -111,7 +111,7 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                         size="xl"
                         color="orange"
                         component="a"
-                        href="/temp-cpp-website/contact"
+                        href="/contact"
                     >
                         Contact Us
                     </Button>
