@@ -1,8 +1,22 @@
-import { Badge, Button, Flex, Title, Text, Container, Image } from "@mantine/core";
+import {
+    Badge,
+    Button,
+    Flex,
+    Title,
+    Text,
+    Container,
+    Image,
+} from "@mantine/core";
 
 const Hero: React.FC = () => {
     return (
-        <Flex bg="navy" h="80vh" align="center" c="white">
+        <Flex
+            bg="navy"
+            h={{ base: "auto", sm: "80vh" }}
+            align="center"
+            py={{base: "xl", sm: "0"}}
+            c="white"
+        >
             <Container>
                 <Flex
                     direction={{ base: "column", sm: "row" }}
@@ -13,7 +27,7 @@ const Hero: React.FC = () => {
                 >
                     <Flex direction="column" justify="center" gap="xs" flex="1">
                         <Badge color="orange">100% Free for Nonprofits</Badge>
-                        <Title c="tan" fz={{base: "10vw", sm: 75}} order={1}>
+                        <Title c="tan" fz={{ base: "10vw", sm: 75 }} order={1}>
                             Change
                             <Text inherit c="orange" span>
                                 ++
@@ -25,8 +39,13 @@ const Hero: React.FC = () => {
                             to focus on their mission while we handle the tech.
                         </Text>
                         <Flex gap="sm">
-                            <Button color="orange" component="a" href="/temp-cpp-website/projects">View Projects</Button>
-                      
+                            <Button
+                                color="orange"
+                                component="a"
+                                href="/temp-cpp-website/projects"
+                            >
+                                View Projects
+                            </Button>
                         </Flex>
                     </Flex>
                     <Image w={250} src="/temp-cpp-website/cppgraphic.svg" />

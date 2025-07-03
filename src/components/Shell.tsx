@@ -88,7 +88,7 @@ const Shell: React.FC<PropsWithChildren> = ({ children }) => {
                 </Group>
             </AppShell.Header>
 
-            <AppShell.Navbar py="xl" px="lg" bg="navy" c="white">
+            <AppShell.Navbar py="xl" px="lg" bg="navy" c="white" bd="none">
                 <Flex direction="column" gap="sm">
                     <Button
                         color="navy"

@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                     </Flex>
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, sm: 6 }}>
-                    <Flex gap="md" align="center" justify="end" h="100%">
+                    <Flex gap="md" align="center" justify={{base: "start", sm: "end"}} h="100%">
                         <ActionIcon
                             component="a"
                             href="mailto:info@changeplusplus.org"
