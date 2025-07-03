@@ -44,7 +44,8 @@ const Projects: React.FC = () => {
             projects: [
                 {
                     organization: "Volunteer Action Network",
-                    description: "ello",
+                    description:
+                        "Volunteer Action Network (VAN) works to build economic independence and increase household income and food security, particularly among women and girls, by equipping them with business skills, providing micro-loans, and facilitating economic opportunities. To streamline their operations, we developed comprehensive loan management software. This system centrally manages borrowers, loans, repayments, registrations, savings, expenses, charts, reports, accounting, branches, staff, roles, and permissions. Consolidating data from cumbersome Excel sheets or paper into one secure location, this platform enables VAN staff to easily identify delinquent payers or individuals needing assistance, significantly enhancing their ability to support program participants.",
                     imageSrc: "/nonprofits/2023-2024/VacNetLogo.png",
                 },
                 {
@@ -55,20 +56,23 @@ const Projects: React.FC = () => {
                 },
                 {
                     organization: "Mother to Mother",
-                    description: "ello",
+                    description:
+                        "Mother to Mother (MTM) is a Nashville-based nonprofit founded in 2004 that provides essential childcare materials like diapers, car seats, and cribs to under-resourced mothers and children. Their previous manual, paper-driven process for handling donations and distributions was time-consuming, prone to errors, and caused inventory delays. To solve these issues, we developed two websites: the MTM user app and the admin portal. These platforms establish an integrated inventory system that digitizes the process of tracking incoming and outgoing items. This enhancement allows MTM to maintain accurate inventory, efficiently manage information about community members and donors, and expedite the shopping process for their partner agencies.",
                     imageSrc:
                         "/nonprofits/2023-2024/121f8c_dd66b00223cb496d8e16ec7458d2b5d9~mv2.png",
                 },
                 {
                     organization: "Nashville Diaper Connection",
-                    description: "ello",
+                    description:
+                        "Nashville Diaper Connection (NDC) is a nonprofit dedicated to providing diapers and other essential baby supplies to families in need across 22 Middle Tennessee counties. To streamline their extensive operations, we developed a web application that centralizes order requests, inventory management, and dashboards for NDC staff and their partner organizations. This application provides reliable order, inventory, and user management capabilities, visualizes key data through filterable graphs, and expedites the ordering process for NDC's partners, ultimately enhancing their critical service delivery.",
                     imageSrc:
                         "/nonprofits/2023-2024/336259716_885478806090772_2587060966980191859_n.jpg",
                 },
 
                 {
                     organization: "Friends Life Community",
-                    description: "ello",
+                    description:
+                        'Friends Life Community is a day center for adults with disabilities where families can drop off their loved ones, called "friends," to participate in learning vocational skills and art. Our project aimed to improve their logistical operations and safety by replacing manual, error-prone attendance tracking and enhancing family communication. We developed an app that automatically notifies families upon check-in and includes an integrated feature, similar to a social media feed, for staff to post daily updates, consolidating their digital presence and streamlining communication.',
                     imageSrc:
                         "/nonprofits/2023-2024/FRIENDS_LIFE_COMMUNITY.webp",
                 },
@@ -132,11 +136,6 @@ const Projects: React.FC = () => {
                 },
 
                 {
-                    organization: "Super Money Kids",
-                    description: "ello",
-                    imageSrc: "/nonprofits/2021-2022/images.png",
-                },
-                {
                     organization: "PENCIL Tech",
                     description:
                         "PENCIL equips Nashville classrooms with school supplies, which teachers then distribute to their students. It stands as the primary, no-cost provider of classroom essentials to public schools throughout Nashville. For this initiative, Change++ developed an online database to assist PENCIL in collecting and analyzing data related to the supplies delivered to educators. This system became a central access point, enabling teachers to schedule visits to PENCIL facilities, allowing PENCIL to monitor its stock, and providing teachers with a comprehensive history of their past requisitions.",
@@ -168,11 +167,7 @@ const Projects: React.FC = () => {
                         "This nonprofit's core activity revolves around a large annual food summit, though they're expanding their focus to include year-round educational systems and additional initiatives. Despite working closely with farmers, policymakers, restaurants, and activists, they currently lack any technology, which makes it hard to keep these vital partnerships strong once the summit ends. To solve this, Change++ developed a conference management app for attendees to connect and access event details.",
                     imageSrc: "/nonprofits/2020-2021/TLF_Logo.png",
                 },
-                {
-                    organization: "Tikkun Olam Makers",
-                    description: "ello",
-                    imageSrc: "/nonprofits/2020-2021/TOM.jpg",
-                },
+
                 {
                     organization: "Moraga Orinda Fire District (MOFD)",
                     description:

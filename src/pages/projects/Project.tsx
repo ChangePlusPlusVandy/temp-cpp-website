@@ -1,6 +1,15 @@
 import { Flip } from "@gfazioli/mantine-flip";
-import { Card, Image, ScrollArea, Text, Title } from "@mantine/core";
-import { useHover } from "@mantine/hooks";
+import {
+    ActionIcon,
+    Card,
+    Flex,
+    Image,
+    ScrollArea,
+    Space,
+    Text,
+    Title,
+} from "@mantine/core";
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import type React from "react";
 
 interface ProjectProps {
@@ -14,52 +23,39 @@ const Project: React.FC<ProjectProps> = ({
     description,
     imageSrc,
 }: ProjectProps) => {
-    const { hovered, ref } = useHover();
-
     return (
-        <Flip h={350} w="100%" ref={ref}>
-            <Flip.Target>
-                <Card
-                    bd={hovered ? "2px solid black" : "1px solid black"}
-                    style={
-                        hovered ? { cursor: "pointer" } : { cursor: "default" }
-                    }
-                    h={350}
-                    shadow="sm"
-                    padding="lg"
-                    radius="md"
-                    withBorder
-                >
-                    <Card.Section>
-                        <Image
-                            src={imageSrc}
-                            height={275}
-                            alt="Norway"
-                        />
-                    </Card.Section>
-
-                    <Title ta="center" fw={500} order={2}>
+        <Flip h={350} w="100%">
+            <Card h={350} shadow="sm" padding="lg" radius="md">
+                <Card.Section>
+                    <Image src={imageSrc} height={275} alt="Norway" />
+                </Card.Section>
+                <Flex h="100%" flex="1" justify="space-between" align="end">
+                    <Title fw={500} order={2} size="xl">
                         {title}
                     </Title>
-                </Card>
-            </Flip.Target>
-            <Flip.Target>
-                <Card
-                    bd={hovered ? "2px solid black" : "1px solid black"}
-                    style={
-                        hovered ? { cursor: "pointer" } : { cursor: "default" }
-                    }
-                    h={350}
-                    shadow="sm"
-                    padding="lg"
-                    radius="md"
-                    withBorder
-                >
-                    <ScrollArea h={350}>
-                        <Text>{description}</Text>
-                    </ScrollArea>
-                </Card>
-            </Flip.Target>
+                    <Flip.Target>
+                        <Flex justify="end">
+                            <ActionIcon color="dimmed" variant="subtle">
+                                <IconArrowRight />
+                            </ActionIcon>
+                        </Flex>
+                    </Flip.Target>
+                </Flex>
+            </Card>
+
+            <Card h={350} shadow="sm" padding="lg" radius="md">
+                <ScrollArea h={350}>
+                    <Text>{description}</Text>
+                </ScrollArea>
+                <Space h="md" />
+                <Flip.Target>
+                    <Flex>
+                        <ActionIcon color="dimmed" variant="subtle">
+                            <IconArrowLeft />
+                        </ActionIcon>
+                    </Flex>
+                </Flip.Target>
+            </Card>
         </Flip>
     );
 };

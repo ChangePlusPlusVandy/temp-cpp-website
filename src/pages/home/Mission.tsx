@@ -1,5 +1,5 @@
-import { Flex, Title, Text, ThemeIcon, CheckIcon, Card } from "@mantine/core";
-import { IconFreeRights } from "@tabler/icons-react";
+import { Flex, Title, Text, ThemeIcon, Card } from "@mantine/core";
+import { IconFreeRights, IconUsersGroup } from "@tabler/icons-react";
 
 const Mission: React.FC = () => {
     return (
@@ -24,24 +24,32 @@ const Mission: React.FC = () => {
             <Flex direction="column" gap="xs" flex="1">
                 <Card bg="white">
                     <Flex align="center" gap="md">
-                        <ThemeIcon size="xl">
+                        <ThemeIcon
+                            size="xl"
+                            color="orange"
+                            variant="transparent"
+                        >
                             <IconFreeRights
-                                style={{ width: "70%", height: "70%" }}
+                                style={{ width: "80%", height: "80%" }}
                             />
                         </ThemeIcon>
-                        <Flex direction="column">
-                            <Title order={3}>100% Free</Title>
-                            <Text c="dimmed">
-                                All our services are completely free for
-                                qualifying nonprofits. No hidden costs, ever.
-                            </Text>
-                        </Flex>
+                        <Title order={3}>100% Free</Title>
                     </Flex>
+                    <Text c="dimmed">
+                        All our services are completely free for qualifying
+                        nonprofits. No hidden costs, ever.
+                    </Text>
                 </Card>
                 <Card bg="white">
                     <Flex align="center" gap="md">
-                        <ThemeIcon>
-                            <CheckIcon />
+                        <ThemeIcon
+                            size="xl"
+                            color="orange"
+                            variant="transparent"
+                        >
+                            <IconUsersGroup
+                                style={{ width: "80%", height: "80%" }}
+                            />
                         </ThemeIcon>
                         <Title order={3}>Experienced Volunteers</Title>
                     </Flex>

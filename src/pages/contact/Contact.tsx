@@ -1,4 +1,4 @@
-import { Flex, LoadingOverlay, Space, Tabs } from "@mantine/core";
+import { Flex, Space, Tabs } from "@mantine/core";
 import Shell from "../../components/Shell";
 import Volunteer from "./Volunteer";
 import Nonprofit from "./Nonprofit";

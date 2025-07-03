@@ -10,7 +10,7 @@ const Impact: React.FC = () => {
                     <Grid style={transitionStyles}>
                         <Grid.Col span={4}>
                             <Flex direction="column" align="center">
-                                <Title c="orange">50+</Title>
+                                <Title c="orange">40+</Title>
                                 <Text c="gray.4">Nonprofits Served</Text>
                             </Flex>
                         </Grid.Col>
